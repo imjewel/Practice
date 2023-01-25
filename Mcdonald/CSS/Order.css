@@ -1,0 +1,147 @@
+*{
+ box-sizing: border-box; padding:0; margin:0; text-decoration: none;
+ list-style: none; color:black;
+}
+#container{
+ width:1900px;
+ height:700px;
+ margin:70px auto;
+ position:relative;
+}
+
+/* 헤드 검색창 */
+header{
+    position:absolute;
+    left:10px;
+}
+header input{
+    position:absolute;
+    padding:20px;
+    width:300px;
+    height: 50px;
+    border-radius:10px;
+    border:1px solid#ccc;
+}
+#Search img{
+    width:30px;
+    position:relative;
+    left:250px;
+    top:10px;
+}
+
+/* 상단 리스트 */
+#list{
+    position:absolute;
+    left:320px;
+    top:-80px;
+    z-index:100;
+    width:1280px;
+    height:135px;
+    background-color:transparent;
+}
+#main_logo{
+    width:70px;
+    position:relative;
+    left:50px;
+
+}
+#list_1 li, #list_1 a{
+    color:black;
+    margin:25px 50px 0 0;
+    text-shadow:rgb(0, 0, 0, 0.3) 1px 1px 3px;
+    font-size:30px;
+    text-align:center;
+    float:left;
+}
+#list:hover{
+    transition-duration:0.5s;
+    text-shadow:none;
+}
+#list a{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+#list a:hover, #list a:focus, #list a:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.8);;
+    transform: scale(1.1);
+}
+#list_2 ul{
+    display:flex;
+    justify-content:space-around;
+    widtH:300px;
+    margin:20px;
+}
+#login_button{
+    background-color:red;
+    border: 1px transparent;
+    border-radius:5px;
+    color: white;
+    width:100px;
+    height:30px;
+    margin:6px;
+    font-size:0.9em;
+}
+#list_2 img{
+    width:40px;
+}
+
+/* 메뉴 카테고리 */
+#category{
+    padding:80px;
+    height:900px;
+    float:left;
+    border-right:3px solid#ccc;
+    text-align: center;
+    font-size:1.5em;
+    line-height:2em;
+}
+/* 일반 메뉴 버튼 */
+#list_open > button{
+    border:none;
+    background-color:white;
+    color: rgb(201,174,0);
+    font-size:1.2em;
+}
+#list_open:visited{
+    background-color:blue;
+}
+/* 일반 메뉴 리스트 */
+#menu_list{
+    list-style:none;
+    overflow:hidden;
+    transition:height ease-out 1s 0s;
+}
+/* 맥모닝 메뉴 버튼 */
+button{
+    cursor:pointer;
+}
+#list_open2 > button{
+    border:none;
+    background-color:white;
+    font-size:1.2em;
+}
+/* 맥모닝 메뉴 리스트 */
+#menu_list2{
+    height:0;
+    list-style:none;
+    overflow:hidden;
+    transition:height ease-out 1s 0s;
+}
+
+/* 메뉴판 */
+#menu > iframe {
+    border:none;
+    margin-top:50px;
+}
+
+/* 장바구니 */
+#cart{
+    width:200px;
+    position:absolute;
+    right:300px;
+    top:0px;
+}
